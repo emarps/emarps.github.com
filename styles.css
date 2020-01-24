@@ -1,0 +1,63 @@
+
+
+.mySketch {
+    width: 800px;
+    height: 250px;
+}
+ 
+header {
+    font-family: 'Amarante', cursive;
+    color: #545E56;
+}
+
+body{
+padding: 50px;
+margin: 50px;
+color: #545E56;
+background-color: #EAE1DF;
+}
+
+main2{
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    background-color: #B79492 ;
+    
+}
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; 
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #B79492;
+  color: white;
+  text-align: center;
+}
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+
+
+ 
