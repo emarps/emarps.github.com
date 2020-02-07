@@ -2,7 +2,7 @@
   main {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -16,14 +16,14 @@
     padding: 2em;
   }
 }
-.mySketch {
+#mySketch {
   width: 800px;
   height: 250px;
-  border: 2px solid #B79492;;
+  border: 2px solid #e4ebed;
   display: flex;
   flex-direction: column;
-  width: 800px;
   margin: auto;
+  border-radius: 5px;
 }
 
 
@@ -34,7 +34,7 @@ article {
   
 }
 
-#heading {
+header {
   display: flex;
   flex-direction: column;
   width: 800px;
