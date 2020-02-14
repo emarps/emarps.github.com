@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+background-color: white;
+margin: 0;
+padding: 10px;
+}
+
+body {
+   
+    background-image: url(images/CrystalBall.png);
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-size: 60%;
+    background-color: #e4ebed;
+}
+
+div {
+    position: relative;
+    left: 55%;
+    top: 280px;
+}
+
+
+/*form */
+
+form {
+    margin: auto;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+input {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    padding: 10px 0px 20px 15px;
+    font-size: 16px;
+}
+
+.invisible {
+    display: none;
+}
+
+
+/* once you submit paragraph */
+
+.visible {
+    top: 100px;
+    left: 60px;
+    width: 500px;
+    padding: 20px;
+    color: #fff;
+    background-color: #b692f0;
+    border-radius: 6px;
+    display: block;
+    position: fixed;
+    line-height: 1.5em;
+}
+
+#submit {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-style: solid;
+    border-radius: 6px;
+    padding: 15px 35px 15px 35px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+/* footer */
+
+.link a, p {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12pt;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2em;
+    
+}
+
+.link a:hover {
+    color: #555;
+}
+
+/* type */
+
+
+h2 {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+    color: #545E56;
+    font-size: 300%;
+    font-weight: 300;
+    text-align: center;
+    padding: 30px;
+}
+footer {
+    text-align: center;
+    padding: 2em;
+    margin-top: 2em;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
