@@ -1,7 +1,7 @@
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-top: 20px;
   overflow: hidden;
   background-color: white;
   display: flex;
@@ -84,7 +84,7 @@ footer {
   margin-top: 2em;
 }
 
-.worksCited {
+#worksCited {
   font-size: 12px;
   text-align: left;
   padding-bottom: 20px;
@@ -109,6 +109,8 @@ h3 {
 h2{
   font-family: 'Montserrat', sans-serif;
   color: #545E56;
+  padding-left: 30px;
+  text-align: center;
 }
 
 p {
