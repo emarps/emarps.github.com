@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lizzy Marples Challenges</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+    <h1> HTML and CSS Refresher Challenges</h1>
+</header>
+
+<nav>
+    <ul>
+      <li class="locationmarker"><a href="index.html">HTML Basics</a></li>
+      <li><a href="cssbasics.html">CSS Basics</a></a></li>
+      <li><a href="layout.html">Page Layout</a></li>
+      <li><a href="responsive.html">Responsive Design</a></li>
+    </ul>
+  </nav>
+
+    <main>
+       
+       <article>
+        
+           <h2> Inheritance in CSS</h2>
+           <p> CSS stands for Cascading Style Sheets and 'cascading' is important to understand when working with CSS. 
+             Sometimes when working in CSS you'll notice that certain properties aren't working or are applied different
+             than what you intended. This is usually because of 'inheritance.' The best way I have seen it described is the 
+             following: "Inheritance is a way of propagating property values from parent elements to their children." It gets
+             a bit confusing because some CSS property values set on parent elements are inherited by their children and some are not. 
+             For example, text-size properties inherited but padding and margins are not. 
+           </p>
+
+       </article>
+
+       <article>
+            <h2> Specificity in CSS</h2>
+            <p>Specificity in similar to inheritance in the fact that some rules don't apply to some elements. When there are conflicting CSS rules, 
+              the browser will determine what is most specific and therfore is applied. There are different specificity hierarchies including: inline styles, 
+              classes, IDs, attributes, and psuedo-classes, elements and psuedo-elements. An analogy that helped me understand this concept better is the analogy
+              between specificity and Star Wars <a href="https://stuffandnonsense.co.uk/archives/css_specificity_wars.html">(click here for article)</a>.
+              Compound selectors can contain moreee than one simple selector while group selectors allow you to group multiple seleectors that share the same
+              deeclaration which helps considate your stylesheet.
+               </p>
+       </article>
+
+       <article>
+           <h2> ID and Class Attributes</h2>
+         <p> The biggest difference between an ID and a Class Attribute is that classes can be used multiple times while an ID can only be 
+           used once. This makes a difference when styling, if you want to style multiple sections the same then you would use a class attribute. 
+           An ID attribute specifies a unqique eleement that can only be used once on each page with that ID.
+         </p>
+       </article>
+    
+
+    </main>
+
+ <footer>
+    <p>Page by Lizzy Marples</p>
+    <p> HTML checked by Myself :)</p>
+    <a href="http://validator.w3.org/check?uri=referer">Valid HTML</a>
+ </footer>
+
+</body>
+
+
+</html>
+
+
+
+  

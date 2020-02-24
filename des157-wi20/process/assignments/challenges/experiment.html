@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Function Experimentation</title>
+</head>
+<body>
+    <h1>JS Function Experimentation</h1>
+    <script>
+
+    var myInteger = prompt("please enter a number between 1 and 10", "");
+
+        if( parseInt(myInteger) ){
+        console.log("you have an integer");
+        }
+        else{ console.log("you don't have an integer"); 
+        }
+    
+    var flower = ["peony","rose","sunflower","lily"];
+    var myString = "I am sad, will you get me a";
+
+        for (var i=0; i<flower.length; i++){
+            console.log(`${myString} ${flower[i]}`);
+        }
+
+    function randomInt(min,max){
+
+        return Math.floor ((max-min+1) * Math.random()) + min;
+    }
+
+    function answer(food){
+        var randomFlower = flower[randomInt(0,food.length-1)];
+            console.log(`But if not, I will get myself a ${randomFlower} today`);
+        }
+    
+    answer(flower);
+    
+    </script>
+</body>
+</html>
