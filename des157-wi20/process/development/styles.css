@@ -1,14 +1,12 @@
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: white;
-}
-
-li {
-  float: left;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 li a, .dropbtn {
@@ -30,12 +28,12 @@ li.dropdown {
 
 .dropdown-content {
   display: none;
-  position: absolute; /* dropdown goes over other material  */
+  position: absolute;
+  /* dropdown goes over other material  */
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-
 }
 
 .dropdown-content a {
@@ -59,19 +57,15 @@ article {
   padding: 1em;
   margin: 20px;
   border-radius: 6px;
-  
 }
 
-
-
 header {
-  padding: 50px;
+  margin-top: 30px;
 }
 
 body {
   color: #545E56;
 }
-
 
 * {
   box-sizing: border-box;
@@ -91,7 +85,6 @@ body {
 
 img {
   max-width: 100%;
-  border: 5px solid #B79492;
 }
 
 footer {
@@ -107,7 +100,9 @@ h1 {
   color: #545E56;
   font-size: 300%;
   font-weight: 300;
+  text-align: center;
 }
+
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 150%
@@ -123,7 +118,6 @@ a {
   text-decoration: none;
   color: black;
 }
-
 
 .A {
   text-indent: 50px;
