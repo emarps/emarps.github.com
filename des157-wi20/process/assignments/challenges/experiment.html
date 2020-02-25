@@ -4,39 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JS Function Experimentation</title>
+    <title>Function Experiment</title>
 </head>
 <body>
-    <h1>JS Function Experimentation</h1>
+
+    <h1>Function Experimentation</h1>
     <script>
 
-    var myInteger = prompt("please enter a number between 1 and 10", "");
+    var userPrompt = prompt("What's your bestfriends name?","");
+    var activities = [`sleepover`,`brunch`, `cry`];
 
-        if( parseInt(myInteger) ){
-        console.log("you have an integer");
-        }
-        else{ console.log("you don't have an integer"); 
-        }
-    
-    var flower = ["peony","rose","sunflower","lily"];
-    var myString = "I am sad, will you get me a";
+    function hello(name){
 
-        for (var i=0; i<flower.length; i++){
-            console.log(`${myString} ${flower[i]}`);
+        var welcome;
+
+        if (name == null || name == ""){
+            welcome = `Did you forget your friends name?`;
         }
 
-    function randomInt(min,max){
+        else{
+            welcome = `Hi what are you and ${name} going to do today?`;
+        }
 
-        return Math.floor ((max-min+1) * Math.random()) + min;
+        return welcome;
     }
 
-    function answer(food){
-        var randomFlower = flower[randomInt(0,food.length-1)];
-            console.log(`But if not, I will get myself a ${randomFlower} today`);
-        }
-    
-    answer(flower);
-    
+    function randomInt( min, max){
+        return Math.floor( (max - min + 1) * Math.random() ) + min;
+    }
+
+    function wellness(name,act){
+        console.log(hello(name));
+        var randomActivity = act[randomInt(0, act.length-1)];
+        console.log(`Today, ${name} wants to ${randomActivity}!`);
+
+    }
+
+    wellness(userPrompt,activities);
+
+    var myName = prompt("How long have you known your friend?", "");
+
+    if( parseInt(myName) ){
+      console.log("You got it! What a good friend you are :)");
+    }
+    else{ console.log("Are you sure?"); }
+
     </script>
+
+
 </body>
 </html>
