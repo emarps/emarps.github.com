@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
+    <title>Game of PIG</title>
+</head>
+
+<body>
+    <header>
+        <h1>GAME OF PIG</h1>
+    </header>
+    <div class = "intro">
+       
+        <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a “one”. If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a “one” was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p> 
+        <p>Oh, and if you roll two “ones” (snake eyes), your current score gets zeroed out. So don’t do that.</p>
+    </div>
+    <div class = "inter">
+        <div id="gamecontrol">
+            <h2>Start a Game</h2>
+            <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+        </div>
+
+        <div id="game"></div>
+        <div id="actions"></div>
+        <div id="score"></div>
+    </div>
+
+    <script src="script.js"> </script>
+
+    <footer>
+        <div class="footer">
+            <p>
+                <a
+                    href="mailto:&#101;&#097;&#109;&#097;&#114;&#112;&#108;&#101;&#115;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Email</a>
+                <a href="http://validator.w3.org/check?uri=referer">Valid HTML</a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
