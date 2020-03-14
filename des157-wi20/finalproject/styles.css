@@ -1,0 +1,420 @@
+* {
+    box-sizing: border-box;
+}
+
+/*  DIV CONTAIN 4-5 */
+
+div.container1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+div.container2 {
+    margin: 0;
+    top: 100%;
+    position: absolute;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+div.container3 {
+    margin: 0;
+    top: 100%;
+    padding-left: 0%;
+    padding-right: 13%;
+    position: absolute;
+}
+
+
+ foodimg
+
+
+
+/*  END DIV CONTAIN 4-5 */
+main {
+    top: 170%;
+    position: absolute;
+    margin: 0;
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-bottom: 20%;
+  }
+/*  NAVIGATION  */
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: tomato;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+/*  END NAVIGATION  */
+
+/*  HEADER  */
+
+header {
+    width: auto;
+    height: 800px;
+    background-image: url('images/planet.png');
+    background-position: center;
+    opacity: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*  HEADER END  */
+
+body {
+    background-color: #A7B4BE;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+/*  TWO ROWS  */
+
+.in_row {
+    display: flex;
+}
+.in_row2 {
+    display: flex;
+}
+.left {
+    padding-top: 10%;
+    width: 42%;
+    padding-right: 7%;
+    margin-top: 10%;
+}
+
+.right {
+    width: 58%;
+    padding-top: 10%;
+    padding-left: 12%;
+    margin-top: 10%;
+    padding-right: 10%;
+}
+
+
+/*  TWO ROWS END  */
+
+/*  PAGE 1 OVERLAY */
+
+#eightpploverlay, #usblueoverlay {
+    padding: 20% 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+
+#eightpploverlay {
+    background-color: rgba(196, 163, 179, .9);
+}
+
+#usblueoverlay {
+    background-color: rgba(196, 163, 179, .9);
+}
+
+#eightpplclose, #usblueclose {
+    position: absolute;
+    top: 5em;
+    right: 10em;
+    font-size: 2em;
+    color: white;
+}
+
+.open {
+    margin-top: 8%;
+}
+
+#items img {
+    height: 25vh;
+    width: auto;
+    transition: transform .2s;
+}
+
+#items article img:hover {
+    transform: scale(1.1);
+}
+
+/*  PAGE 1 OVERLAY END  */
+
+/* QUIZ  */
+
+.quiz-wrapper {
+    position: relative;
+    display: block;
+    width: 510px;
+    height: 450px;
+  
+}
+
+p.question-description {
+  font-size: 12px;
+  padding-bottom: 8%;
+}
+
+ul.options {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    list-style: none;
+    border-right: 1px solid white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+ol{
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+    li {
+        border: 1px solid transparent;
+        padding: 6px 8px;
+    }
+    li.title {
+        background: #19286C;
+        color: white;
+    }
+    li.option {
+        display: block;
+        position: relative;
+        z-index: 50;
+        font-size: 13px;
+    }
+
+.answers {
+    display: inline-block;
+    width: 335px;
+    font-size: 13px;
+    line-height: 20px;
+}
+    .target {
+        display: inline-block;
+        width: 110px;
+        background: lightblue;
+        margin: 0 3px;
+        text-align: center;
+    }
+
+button[type="submit"] {
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    padding: 10px;
+    background: #19286C;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.lightbox-bg {
+    padding: 20% 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 110%;
+    display: none;
+    text-align: center;
+    z-index: 50;
+    width: 100%;
+    background-color: rgba(196, 163, 179, .9)
+}
+
+.status {
+    display: none;
+    position: absolute;
+    z-index: 110;
+    text-align: center;
+    width: 80%;
+    top: 220px;
+    left: 47px;
+}
+
+
+
+/*QUIZ END*/
+
+footer {
+    text-align: center;
+    padding: 2em;
+    margin-top: 2em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+ 
+.switch {
+    position: relative;
+    height: 26px;
+    display: inline-block;
+    width: 50px;
+    
+  }
+  /* Hide default HTML checkbox */
+  
+  .switch input {
+    display: none;
+  }
+  
+  
+  /* The slider */
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #DFDFDF;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 1.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked+.slider {
+    background-color: #606060;
+  }
+  
+  input:focus+.slider {
+    box-shadow: 0 0 1px #606060;
+  }
+  
+  input:checked+.slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+  }
+  
+  
+  .slider.round {
+    border-radius: 25px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  #menu2 {
+  display:none;
+  }

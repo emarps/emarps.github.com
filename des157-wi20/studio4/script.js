@@ -34,8 +34,6 @@ vaselineclose.addEventListener('click', function (){
 }) 
 
 
-
-
 let currentDroppable = null;
 
 pantone1.onmousedown = function (event) {
