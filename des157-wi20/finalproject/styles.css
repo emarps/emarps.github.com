@@ -31,9 +31,6 @@ div.container3 {
 }
 
 
- foodimg
-
-
 
 /*  END DIV CONTAIN 4-5 */
 main {
@@ -343,14 +340,17 @@ button[type="submit"] {
 footer {
     text-align: center;
     padding: 2em;
-    margin-top: 2em;
+    margin-top: 20em;
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
+    top:30;
 }
 
-
+#footer{
+    padding-top: 50px;
+}
  
 .switch {
     position: relative;
